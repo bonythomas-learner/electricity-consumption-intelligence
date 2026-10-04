@@ -2,7 +2,7 @@
 
 **Consumer Profiling, Load Anomaly Detection, PCA, CBLOF, and Rooftop Solar Suitability**
 
-This repository contains a course-aligned machine-learning and data-analysis capstone for electricity-consumption records from the Hansot subdivision. It includes a Streamlit dashboard, reproducible training scripts, generated evaluation tables, figures, and an editable project report.
+This repository contains a course-aligned machine-learning and data-analysis capstone for electricity-consumption records from the Hansot subdivision. It includes a standalone browser dashboard, reproducible training scripts, generated evaluation tables, figures, and an editable project report.
 
 ## Abstract
 
@@ -26,7 +26,7 @@ The project does not claim to predict a genuinely new connection: connection dat
 - PCA projection for consumer-profile visualization.
 - In-project CBLOF-style clustering anomaly scoring.
 - Transparent load-ratio screening using `contract load (kW) x 8 hours/day x billing days x 0.8`.
-- Streamlit dashboard tabs for overview, consumption, load anomalies, saved model results, PCA/clusters, and preliminary solar scenarios.
+- Standalone HTML dashboard tabs for overview, consumption, load anomalies, saved model results, PCA/clusters, and preliminary solar scenarios.
 - Sidebar filters for tariff, area, feeder, village, and solar status, plus CSV downloads for filtered consumer and anomaly review tables.
 - Saved metrics, experiment records, anomaly outputs, and figures under `results/`.
 
@@ -76,23 +76,17 @@ The table is evidence of the saved development run, not a guarantee of future pe
 
 ## Run locally
 
-This is a Streamlit application. Start it with `streamlit run app.py`, not with `python app.py`.
+Open [dashboard.html](dashboard.html) in a modern browser. No Python installation, web server, or database is required for the dashboard. Use **Upload workbook** to select an authorized and anonymized Hansot Excel file. The workbook is read locally in the browser and is not sent to a server by the dashboard. The first launch needs an internet connection to load the browser spreadsheet and chart libraries from their public CDNs.
 
-```powershell
-py -m venv .venv
-.\.venv\Scripts\Activate.ps1
-python -m pip install -r requirements.txt
-python src\train_models.py --input data\Hansot_adjusted_consumption.xlsx --output results
-streamlit run app.py
-```
+The Python dependencies in `requirements.txt` are only needed if the team wants to reproduce the saved model results with `src/train_models.py`; they are not needed to run the website.
 
-Place only an authorized and anonymized workbook at `data/Hansot_adjusted_consumption.xlsx` and the app will load it automatically. You can also upload the workbook from the dashboard sidebar. The real workbook is ignored by Git. The expected workbook columns are documented in [data/README.md](data/README.md) and [docs/DATA_DICTIONARY.md](docs/DATA_DICTIONARY.md).
+Place only an authorized and anonymized workbook at `data/Hansot_adjusted_consumption.xlsx` if you also want to keep a local copy beside the project. The real workbook is ignored by Git. The expected workbook columns are documented in [data/README.md](data/README.md) and [docs/DATA_DICTIONARY.md](docs/DATA_DICTIONARY.md).
 
 ## Repository structure
 
 ```text
 .
-├── app.py                         # Streamlit dashboard
+├── dashboard.html                 # Standalone browser dashboard
 ├── data/                          # Data instructions; private workbook excluded
 ├── docs/project_report.docx       # Editable report supplied with the project
 ├── notebooks/                     # Notebook notes and extension space

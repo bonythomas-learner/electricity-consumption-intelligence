@@ -12,7 +12,7 @@
 | --- | --- | --- |
 | Bony Thomas | 25280041 | Data validation, feature engineering, exploratory analysis, and profiling |
 | Bhavin Kirtikumar Patel | 25280040 | KNN/Decision Tree classification, tuning, evaluation, and anomaly analysis |
-| Mayurkumar Bholabhai Bhalani  | 25280045 | Solar scenarios, Streamlit dashboard, integration, and deployment documentation |
+| Mayurkumar Bholabhai Bhalani  | 25280045 | Solar scenarios, browser dashboard, integration, and deployment documentation |
 
 ## 2. Abstract
 
@@ -147,15 +147,16 @@ The improvement is modest for the tree and stronger for KNN. This is a measured 
 
 ## 12. Dashboard and implementation
 
-`app.py` provides the following tabs:
+`dashboard.html` provides the following tabs:
 
-- Overview: consumer count, average monthly consumption, solar count, feeder count, and monthly trend.
-- Consumption: tariff-level summaries and consumer statistics.
-- Load Anomalies: contract-load benchmark, ratio, and review label.
+- Overview: consumer count, average monthly consumption, solar count, feeder count, monthly trend, tariff mix, and area summaries.
+- Consumption: tariff-level summaries, consumer statistics, filters, and CSV download.
+- Load Anomalies: contract-load benchmark, ratio, review label, and downloadable review queue.
+- Model Results: saved classification metrics and the project proxy-target explanation.
 - PCA / Clusters: saved PCA visualization and clustering metrics.
-- Solar: parameterized preliminary solar scenario.
+- Solar Scenario: parameterized preliminary solar scenario.
 
-The dashboard accepts only an authorized/anonymized Excel upload. The public repository includes no source workbook.
+The dashboard is a standalone browser page. It accepts only an authorized/anonymized Excel upload, reads the workbook locally, and requires no Python or Streamlit installation. The public repository includes no source workbook.
 
 ## 13. Limitations and future scope
 
