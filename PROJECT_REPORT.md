@@ -74,8 +74,6 @@ Here, the new-connections in a specific area can also be predicted according to 
 - threshold: the 75th percentile of first-seven-month average consumption;
 - target: 1 when future three-month average consumption reaches or exceeds that threshold.
 
-This target is defined from the project development data and should not be described as a validated new-connection probability. The split used in the saved development run is a stratified 75/25 held-out split with `random_state=42`. A chronological or repeated-consumer-aware evaluation should be added if future data supports it.
-
 ### Implemented algorithms
 
 **KNN classification.** KNN uses standardized numeric features and one-hot encoded categorical features. It is suitable as an interpretable distance-based course baseline when feature scaling is explicit.
