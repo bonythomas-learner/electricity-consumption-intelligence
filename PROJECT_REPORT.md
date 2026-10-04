@@ -113,8 +113,6 @@ The final team must clarify whether the 3 kW cost is before or after subsidy, wh
 
 The saved classification files report accuracy, precision, recall, F1, and ROC-AUC. K-Means is evaluated with silhouette score. PCA is reported with explained-variance ratio. CBLOF is summarized by a configurable percentile review count because verified anomaly labels are not available.
 
-For a stronger final evaluation, add PR-AUC and Brier score/calibration for probabilities, precision at a fixed review budget for verified anomaly labels, and chronological/repeated-consumer holdout checks. Do not enter metrics that were not produced by an executed experiment.
-
 ## 10. Results from the supplied development run
 
 ### Classification
