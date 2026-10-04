@@ -14,8 +14,6 @@
 | Bhavin Kiritkumar Patel | To be completed | KNN/Decision Tree classification, tuning, evaluation, and anomaly analysis |
 | Mayurkumar Bholabhai Bhalani  | To be completed | Solar scenarios, Streamlit dashboard, integration, and deployment documentation |
 
-Replace the placeholders with the team's actual names, identifiers, and work. All members should review the results and contribute to the final report.
-
 ## 2. Abstract
 
 This project develops an electricity-consumption intelligence workflow using consumer-level records from the Hansot subdivision. The workflow combines data analysis with course-aligned machine-learning methods: KNN classification, Decision Tree classification, K-Means clustering, PCA, and an in-project CBLOF-style anomaly detector. Monthly consumption and contract-load information are converted into behavioral features. A future-period proxy uses the first seven months for predictors and the final three months for the outcome, because the working dataset does not contain connection dates or post-connection histories. Hyperparameter tuning is used to compare KNN and Decision Tree performance. K-Means and PCA support consumer profiling, while CBLOF and a transparent load-ratio formula produce review priorities. Rooftop solar is presented as preliminary scenario analysis rather than certified technical feasibility.
