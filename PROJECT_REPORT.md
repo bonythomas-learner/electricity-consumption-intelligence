@@ -48,7 +48,7 @@ The private working workbook contains 13,650 records and ten monthly consumption
 | Rooftop area/shading | No | Solar output is preliminary only |
 | Verified anomaly labels | No | Anomaly accuracy cannot be claimed |
 
-The exact source permission and anonymization method must be recorded before the repository is made public.
+Here we have considered only residential consumers for this specific project.The consumers of all other categories can be included and various other features such as last payment, arrears, current meter status, regulatory constraints etc can be added as a future part of this project
 
 ## 5. Data preparation and feature engineering
 
