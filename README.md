@@ -75,6 +75,3 @@ The table is evidence of the saved development run, not a guarantee of future pe
 
 
 
-## Report
-
-The detailed submission outline, actual development metrics, limitations, future work, viva questions, and three-member contribution table are in [PROJECT_REPORT.md](PROJECT_REPORT.md). Replace contribution placeholders with the team's actual names and work before submission.
