@@ -73,44 +73,7 @@ The table is evidence of the saved development run, not a guarantee of future pe
 | PCA | Two-dimensional consumer-profile visualization |
 | Anomaly detection / CBLOF | In-project clustering-based anomaly score |
 
-## Run locally
 
-Open [dashboard.html](dashboard.html) in a modern browser. No Python installation, web server, or database is required for the dashboard. Use **Upload workbook** to select an authorized and anonymized Hansot Excel file. The workbook is read locally in the browser and is not sent to a server by the dashboard. The first launch needs an internet connection to load the browser spreadsheet and chart libraries from their public CDNs.
-
-The Python dependencies in `requirements.txt` are only needed if the team wants to reproduce the saved model results with `src/train_models.py`; they are not needed to run the website.
-
-Place only an authorized and anonymized workbook at `data/Hansot_adjusted_consumption.xlsx` if you also want to keep a local copy beside the project. The real workbook is ignored by Git. The expected workbook columns are documented in [data/README.md](data/README.md) and [docs/DATA_DICTIONARY.md](docs/DATA_DICTIONARY.md).
-
-## Repository structure
-
-```text
-.
-├── dashboard.html                 # Standalone browser dashboard
-├── data/                          # Data instructions; private workbook excluded
-├── docs/project_report.docx       # Editable report supplied with the project
-├── notebooks/                     # Notebook notes and extension space
-├── results/                       # Development metrics, outputs, and figures
-├── src/data_utils.py              # Loading, features, and target construction
-├── src/train_models.py            # KNN, tree, K-Means, PCA, CBLOF, and baseline
-├── src/cblof.py                   # In-project CBLOF-style detector
-├── src/solar.py                   # Parameterized solar scenarios
-├── PROJECT_REPORT.md              # Public Markdown report and submission checklist
-├── requirements.txt
-└── .gitignore
-```
-
-## Data protection
-
-Do not commit the private workbook, account numbers, meter numbers, addresses, phone numbers, or other personal/sensitive fields. Consumer identifiers visible in development outputs are placeholders/anonymized labels and should be reviewed before publication. The report must state the dataset permission and anonymization method used by the team.
-
-## Limitations
-
-- Billing dates and billing-period metadata are unavailable, so bimonthly allocation cannot be scientifically implemented from this workbook.
-- Connection dates and post-connection history are unavailable, so the classifier is a future-period proxy rather than a new-connection forecast.
-- Verified anomaly investigation labels are unavailable; CBLOF and load-ratio flags are review priorities only.
-- Contract demand in kVA and measured peak demand are unavailable. kVA must not be silently treated as kW.
-- Missing monthly cells are present and are handled through the current feature calculations; the missingness treatment should be reviewed for the final analysis.
-- Rooftop area, shading, daytime load, tariff/export rules, and site-specific solar yield are unavailable.
 
 ## Report
 
