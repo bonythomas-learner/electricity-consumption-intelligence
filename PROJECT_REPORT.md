@@ -162,25 +162,3 @@ The dashboard accepts only an authorized/anonymized Excel upload. The public rep
 The main limitations are missing billing-period metadata, connection dates, verified anomaly labels, measured peak demand, kVA demand, property area, rooftop information, tariff/export parameters, and site-specific solar yield. The current classification split is random and evaluates a project-defined proxy. Missing monthly cells are present and deserve explicit missingness sensitivity analysis.
 
 Future scope includes confirmed bimonthly allocation, connection-date cohorts, post-connection outcomes, interval data, measured peak demand, verified field labels, probability calibration, privacy-preserving aggregation, and a technically reviewed solar feasibility module.
-
-## 14. Requirement-to-file mapping
-
-| Submission requirement | Repository evidence |
-| --- | --- |
-| Public code | `app.py`, `src/`, `requirements.txt` |
-| Project abstract and description | This report and `README.md` |
-| Approach and methodology | Sections 5 through 8 |
-| Metrics | Section 9 and `results/model_metrics*.csv` |
-| Experiments and tuning | Section 11 and `results/hyperparameter_experiments.csv` |
-| Figures | `results/figures/` |
-| Editable report | `docs/project_report.docx` |
-
-## 15. Final publication checklist
-
-- [ ] Replace team placeholders with real names, IDs, and actual contributions.
-- [ ] Confirm data permission and anonymization before making the repository public.
-- [ ] Inspect the Git diff for private workbooks and sensitive identifiers.
-- [ ] Re-run training from the permitted workbook and record the command/date.
-- [ ] Reconcile generated metrics with this report.
-- [ ] Add course/syllabus confirmation for the two required ML algorithms.
-- [ ] Add PR-AUC, calibration, and time-aware evaluation if required by the marking rubric.
