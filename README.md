@@ -8,7 +8,6 @@ This repository contains a course-aligned machine-learning and data-analysis cap
 
 The project converts monthly electricity consumption and contract-load information into interpretable features for consumer classification, behavioral profiling, anomaly screening, and preliminary rooftop-solar scenarios. KNN and Decision Tree models classify a future-period high-consumption proxy. K-Means and PCA support consumer segmentation and visualization. A CBLOF-style clustering detector and an assumption-based load-ratio baseline produce review queues. Solar calculations remain preliminary because rooftop area, shading, daytime demand, tariff, export compensation, and site-specific yield are not present in the working dataset.
 
-The project does not claim to predict a genuinely new connection: connection dates and post-connection histories are unavailable. It also does not claim that an anomaly proves theft, unauthorized load, vacancy, or a meter fault.
 
 ## Team
 
