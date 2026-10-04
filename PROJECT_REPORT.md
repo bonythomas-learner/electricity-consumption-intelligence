@@ -11,8 +11,8 @@
 | Member | Student ID | Actual contribution |
 | --- | --- | --- |
 | Bony Thomas | 25280041 | Data validation, feature engineering, exploratory analysis, and profiling |
-| Bhavin Kiritkumar Patel | To be completed | KNN/Decision Tree classification, tuning, evaluation, and anomaly analysis |
-| Mayurkumar Bholabhai Bhalani  | To be completed | Solar scenarios, Streamlit dashboard, integration, and deployment documentation |
+| Bhavin Kirtikumar Patel | 25280040 | KNN/Decision Tree classification, tuning, evaluation, and anomaly analysis |
+| Mayurkumar Bholabhai Bhalani  | 25280045 | Solar scenarios, Streamlit dashboard, integration, and deployment documentation |
 
 ## 2. Abstract
 
