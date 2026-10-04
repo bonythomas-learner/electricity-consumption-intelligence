@@ -1,0 +1,14 @@
+Metric,Value
+Records,13650.0
+Monthly columns,10.0
+First-7-month high threshold,95.71428571428571
+Missing monthly cells,2306.0
+Solar consumers,562.0
+Non-solar consumers,13088.0
+Unique feeders,20.0
+Unique villages,50.0
+Selected K,2.0
+Selected K silhouette,0.9912857855923563
+PC1 variance,0.49972163538660863
+PC2 variance,0.1834265091168287
+CBLOF flagged at 99th percentile,137.0

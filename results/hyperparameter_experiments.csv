@@ -1,0 +1,31 @@
+model,experiment,cv_f1
+Decision Tree,"{'model__max_depth': 5, 'model__min_samples_leaf': 100}",0.8876975476361622
+Decision Tree,"{'model__max_depth': 7, 'model__min_samples_leaf': 100}",0.8876975476361622
+Decision Tree,"{'model__max_depth': None, 'model__min_samples_leaf': 100}",0.8876975476361622
+Decision Tree,"{'model__max_depth': 10, 'model__min_samples_leaf': 100}",0.8876975476361622
+Decision Tree,"{'model__max_depth': 10, 'model__min_samples_leaf': 50}",0.8872777977286678
+Decision Tree,"{'model__max_depth': None, 'model__min_samples_leaf': 50}",0.8872777977286678
+Decision Tree,"{'model__max_depth': 7, 'model__min_samples_leaf': 50}",0.8872777977286678
+Decision Tree,"{'model__max_depth': 5, 'model__min_samples_leaf': 50}",0.8872777977286678
+Decision Tree,"{'model__max_depth': 5, 'model__min_samples_leaf': 25}",0.886804983762316
+Decision Tree,"{'model__max_depth': 5, 'model__min_samples_leaf': 10}",0.8862608501940843
+Decision Tree,"{'model__max_depth': 3, 'model__min_samples_leaf': 50}",0.8851046568834804
+Decision Tree,"{'model__max_depth': 3, 'model__min_samples_leaf': 10}",0.8851046568834804
+Decision Tree,"{'model__max_depth': 3, 'model__min_samples_leaf': 25}",0.8851046568834804
+Decision Tree,"{'model__max_depth': 3, 'model__min_samples_leaf': 100}",0.884816647954327
+Decision Tree,"{'model__max_depth': 7, 'model__min_samples_leaf': 25}",0.8846041394541627
+Decision Tree,"{'model__max_depth': 10, 'model__min_samples_leaf': 25}",0.8834267315769347
+Decision Tree,"{'model__max_depth': None, 'model__min_samples_leaf': 25}",0.8832430521372363
+Decision Tree,"{'model__max_depth': 7, 'model__min_samples_leaf': 10}",0.8791112201584402
+Decision Tree,"{'model__max_depth': 10, 'model__min_samples_leaf': 10}",0.8761728555171683
+Decision Tree,"{'model__max_depth': None, 'model__min_samples_leaf': 10}",0.8745602244316864
+KNN,"{'model__n_neighbors': 5, 'model__p': 1, 'model__weights': 'distance'}",0.7946644268818706
+KNN,"{'model__n_neighbors': 9, 'model__p': 1, 'model__weights': 'distance'}",0.7943113917224436
+KNN,"{'model__n_neighbors': 15, 'model__p': 1, 'model__weights': 'distance'}",0.7917138205037768
+KNN,"{'model__n_neighbors': 21, 'model__p': 1, 'model__weights': 'distance'}",0.7870832892344141
+KNN,"{'model__n_neighbors': 5, 'model__p': 1, 'model__weights': 'uniform'}",0.7841140015303434
+KNN,"{'model__n_neighbors': 9, 'model__p': 1, 'model__weights': 'uniform'}",0.7817715263354799
+KNN,"{'model__n_neighbors': 31, 'model__p': 1, 'model__weights': 'distance'}",0.7795113609292488
+KNN,"{'model__n_neighbors': 5, 'model__p': 2, 'model__weights': 'distance'}",0.7774022330064355
+KNN,"{'model__n_neighbors': 9, 'model__p': 2, 'model__weights': 'distance'}",0.7752635620099777
+KNN,"{'model__n_neighbors': 15, 'model__p': 2, 'model__weights': 'distance'}",0.7724296304972431
