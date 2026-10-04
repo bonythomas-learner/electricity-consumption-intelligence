@@ -67,7 +67,7 @@ The requested bimonthly adjustment cannot be implemented from the supplied workb
 
 ## 6. Classification target and methodology
 
-The data does not support a genuine new-connection model. Instead, the project uses a clearly labelled forecasting proxy:
+Here, the new-connections in a specific area can also be predicted according5 to the density of consumption in a particular area. The project also uses a clearly labelled forecasting proxy:
 
 - predictor period: the first seven months;
 - outcome period: the final three months;
