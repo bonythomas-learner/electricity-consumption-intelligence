@@ -1,4 +1,4 @@
-# Electricity Consumption Intelligence
+# CUSTOMER PROFILING, ANOMALY DETECTION AND COST BENEFIT ANALYTICS FOR SOLAR ROOFTOP ADOPTION IN POWER DISCOMS
 
 **Consumer Profiling, Load Anomaly Detection, PCA, CBLOF, and Rooftop Solar Suitability**
 
