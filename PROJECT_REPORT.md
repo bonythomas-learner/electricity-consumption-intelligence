@@ -163,3 +163,8 @@ The dashboard is a standalone browser page. It accepts only an authorized/anonym
 The main limitations are missing billing-period metadata, connection dates, verified anomaly labels, measured peak demand, kVA demand, property area, rooftop information, tariff/export parameters, and site-specific solar yield. The current classification split is random and evaluates a project-defined proxy. Missing monthly cells are present and deserve explicit missingness sensitivity analysis.
 
 Future scope includes confirmed bimonthly allocation, connection-date cohorts, post-connection outcomes, interval data, measured peak demand, verified field labels, probability calibration, privacy-preserving aggregation, and a technically reviewed solar feasibility module.
+
+
+## Note: While running the consumer_consumption_project_final.py file , it is requested to upload Hansot_adjusted_consumption.xlsx from the repository before running the programme
+
+## This project is intended as a pilot project and can be further developed to provide end to end solution for further consumer profiling and anomaly detection on all types of consumers.
