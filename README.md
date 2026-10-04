@@ -59,11 +59,10 @@ The supplied result files use the same stratified 75/25 held-out split for basel
 | Decision Tree baseline | 0.9021 | 0.8430 | 0.9193 | 0.8795 | 0.9647 |
 | Decision Tree tuned | 0.9045 | 0.8587 | 0.9027 | 0.8801 | 0.9651 |
 
-The table is evidence of the saved development run, not a guarantee of future performance. PR-AUC, calibration, Brier score, and a chronological/repeated-consumer evaluation should be added if required by the final marking rubric.
 
-## Course alignment
+## Used Algorithms
 
-| Course topic | Implementation |
+| Topic | Implementation |
 | --- | --- |
 | Distance measures | Standardized numeric behavioral features and KNN |
 | K-Means | Consumer profiling and CBLOF-style anomaly support |
@@ -75,3 +74,4 @@ The table is evidence of the saved development run, not a guarantee of future pe
 
 
 
+##Note: While running the consumer_consumption_project_final.py file , it is requested to upload Hansot_adjusted_consumption.xlsx from the repository before running the programme
