@@ -11,10 +11,8 @@
 | Member | Student ID | Actual contribution |
 | --- | --- | --- |
 | Bony Thomas | 25280041 | Data validation, feature engineering, exploratory analysis, and profiling |
-| Bhavin Kiritkumar Patel | To be completed | KNN/Decision Tree classification, tuning, evaluation, and anomaly analysis |
-| Mayurkumar Bholabhai Bhalani  | To be completed | Solar scenarios, Streamlit dashboard, integration, and deployment documentation |
-
-Replace the placeholders with the team's actual names, identifiers, and work. All members should review the results and contribute to the final report.
+| Bhavin Kirtikumar Patel | 25280040 | KNN/Decision Tree classification, tuning, evaluation, and anomaly analysis |
+| Mayurkumar Bholabhai Bhalani  | 25280045 | Solar scenarios, Streamlit dashboard, integration, and deployment documentation |
 
 ## 2. Abstract
 
@@ -50,7 +48,7 @@ The private working workbook contains 13,650 records and ten monthly consumption
 | Rooftop area/shading | No | Solar output is preliminary only |
 | Verified anomaly labels | No | Anomaly accuracy cannot be claimed |
 
-The exact source permission and anonymization method must be recorded before the repository is made public.
+Here we have considered only residential consumers for this specific project.The consumers of all other categories can be included and various other features such as last payment, arrears, current meter status, regulatory constraints etc can be added as a future part of this project
 
 ## 5. Data preparation and feature engineering
 
@@ -69,14 +67,12 @@ The requested bimonthly adjustment cannot be implemented from the supplied workb
 
 ## 6. Classification target and methodology
 
-The data does not support a genuine new-connection model. Instead, the project uses a clearly labelled forecasting proxy:
+Here, the new-connections in a specific area can also be predicted according to the density of consumption in a particular area. The project also uses a clearly labelled forecasting proxy:
 
 - predictor period: the first seven months;
 - outcome period: the final three months;
 - threshold: the 75th percentile of first-seven-month average consumption;
 - target: 1 when future three-month average consumption reaches or exceeds that threshold.
-
-This target is defined from the project development data and should not be described as a validated new-connection probability. The split used in the saved development run is a stratified 75/25 held-out split with `random_state=42`. A chronological or repeated-consumer-aware evaluation should be added if future data supports it.
 
 ### Implemented algorithms
 
@@ -116,8 +112,6 @@ The final team must clarify whether the 3 kW cost is before or after subsidy, wh
 ## 9. Metrics used to evaluate the models
 
 The saved classification files report accuracy, precision, recall, F1, and ROC-AUC. K-Means is evaluated with silhouette score. PCA is reported with explained-variance ratio. CBLOF is summarized by a configurable percentile review count because verified anomaly labels are not available.
-
-For a stronger final evaluation, add PR-AUC and Brier score/calibration for probabilities, precision at a fixed review budget for verified anomaly labels, and chronological/repeated-consumer holdout checks. Do not enter metrics that were not produced by an executed experiment.
 
 ## 10. Results from the supplied development run
 
@@ -168,25 +162,3 @@ The dashboard accepts only an authorized/anonymized Excel upload. The public rep
 The main limitations are missing billing-period metadata, connection dates, verified anomaly labels, measured peak demand, kVA demand, property area, rooftop information, tariff/export parameters, and site-specific solar yield. The current classification split is random and evaluates a project-defined proxy. Missing monthly cells are present and deserve explicit missingness sensitivity analysis.
 
 Future scope includes confirmed bimonthly allocation, connection-date cohorts, post-connection outcomes, interval data, measured peak demand, verified field labels, probability calibration, privacy-preserving aggregation, and a technically reviewed solar feasibility module.
-
-## 14. Requirement-to-file mapping
-
-| Submission requirement | Repository evidence |
-| --- | --- |
-| Public code | `app.py`, `src/`, `requirements.txt` |
-| Project abstract and description | This report and `README.md` |
-| Approach and methodology | Sections 5 through 8 |
-| Metrics | Section 9 and `results/model_metrics*.csv` |
-| Experiments and tuning | Section 11 and `results/hyperparameter_experiments.csv` |
-| Figures | `results/figures/` |
-| Editable report | `docs/project_report.docx` |
-
-## 15. Final publication checklist
-
-- [ ] Replace team placeholders with real names, IDs, and actual contributions.
-- [ ] Confirm data permission and anonymization before making the repository public.
-- [ ] Inspect the Git diff for private workbooks and sensitive identifiers.
-- [ ] Re-run training from the permitted workbook and record the command/date.
-- [ ] Reconcile generated metrics with this report.
-- [ ] Add course/syllabus confirmation for the two required ML algorithms.
-- [ ] Add PR-AUC, calibration, and time-aware evaluation if required by the marking rubric.

@@ -13,8 +13,8 @@ The project does not claim to predict a genuinely new connection: connection dat
 ## Team
 
 - Bony Thomas, 25280041
-- Bhavin Kiritkumar Patel
-- Mayurkumar Bholabhai Bhalani
+- Bhavin Kirtikumar Patel 25280040
+- Mayurkumar Bholabhai Bhalani 25280045
 
 ## What has been built
 
